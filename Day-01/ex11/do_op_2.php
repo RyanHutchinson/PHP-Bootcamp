@@ -31,7 +31,6 @@ if (count($argv) != 2){
 $string = preg_replace('/\s+/', '', $argv[1]);
 
 if (count($tmp = explode("+", $string)) > 1){
-    print_r($tmp);
     calc($tmp[0], "+", $tmp[1]);
 }elseif (count($tmp = explode("-", $string)) > 1) {
     calc($tmp[0], "-", $tmp[1]);
