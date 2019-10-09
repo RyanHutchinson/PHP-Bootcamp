@@ -5,10 +5,10 @@ if (count($argv) != 2)
     return;
 
 function str_epur($str){
-    $ret = trim(preg_replace('/ +/', " ", $str));
+    $ret = trim(preg_replace('/\s+/', " ", $str));
     return ($ret);
 }
 
-echo str_epur($argv[1]) . "\n";
+echo str_epur($argv[1]);
 
 ?>
