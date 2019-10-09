@@ -34,12 +34,15 @@ if ($argc == 2){
         echo "Wrong Format\n";
         exit;
     }
+
     $argument_array[0] = array_search(lcfirst($argument_array[0]), $week);
     $argument_array[2] = array_search(lcfirst($argument_array[2]), $month);
+
     if ($argument_array[0] == FALSE || $argument_array[2] == FALSE || count($argument_array[4] = preg_split("/:/", $argument_array[4])) != 3){
         echo "Wrong Format\n";
         exit;
     }
+
     date_default_timezone_set("Europe/Paris");
     echo mktime($argument_array[4][0], $argument_array[4][1], $argument_array[4][2], $argument_array[2], $argument_array[1], $argument_array[3]) . "\n";
 }
