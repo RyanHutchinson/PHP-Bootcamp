@@ -7,14 +7,14 @@ function replace2($str){
     return ($str[1].change($str[2]).$str[3]);
 }
 function change($str){
-    $in = TRUE;
+    $inside = TRUE;
     for ($i = 0; $str[$i]; $i++)
     {
         if ($str[$i] == ">")
-            $in = TRUE;
+            $inside = TRUE;
         if ($str[$i] == "<")
-            $in = FALSE;
-        if ($in)
+            $inside = FALSE;
+        if ($inside)
             $ret .= ucfirst($str[$i]);
         else
             $ret .= $str[$i];
