@@ -2,10 +2,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin : 0%;
   }
+  /************All header goodies below********/
+  .headerbox{
+    height: auto;
+    padding-left: 20px;
+
+  }
+  .headerlogo{
+    display: inline-block;
+  }
+  .headertext{
+    display: inline-block;
+    font-size: 45px;
+    padding-left: 15px;
+    font-style: bold;
+    color:#4f4f4f;
+  }
   
   .navbar {
     overflow: hidden;
-    background-color: dodgerblue;
+    background-color: #f2c73a;
     max-height: 48px;
   }
   
@@ -44,19 +60,34 @@ body {
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: lightskyblue;
+    background-color:#f5d97d;
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
-    
+    left: 76px;
+    top: 129px;
     background-color: #f9f9f9;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
+  .dropdown-content input {
+    float: none;
+    color: black;
+    background-color: #f2c73a;
+    padding: 12px 16%;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content input:hover {
+    background-color: #ddd;
+  }
+
   .dropdown-content a {
     float: none;
     color: black;
@@ -74,9 +105,379 @@ body {
     display: block;
   }
 
-  /*The stuff above is all for the NAVBAR bullshit!*/
-  /*The stuff below is all for the page body*/
-
-  .mainbody{
-    padding: 5px;
+  .homebanner{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+  .homebanner img{
+    border-radius: 5px;
+    width: 35%;
+    /* width: 1200px;
+    height: 325px; */
+    box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.2);
+  }
+
+  .homebanner-text {
+    color: #4f4f4f;
+    font-size: 20px;
+  }
+
+/*****************LOGIN CONTAINER**************/
+  .navbar .login-container {
+    float: right;
+    width: 550px;
+  }
+  
+    .navbar .login button {
+      float: right;
+      padding: 6px;
+      margin-top: 8px;
+      margin-right: 8px;
+      margin-left: 8px;
+      background: white;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.2);
+    }
+  
+    .logout button {
+      float: right;
+      padding: 6px;
+      margin-top: -8px;
+      margin-right: 8px;
+      margin-left: 8px;
+      background:white;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.2);
+    }
+  
+    .navbar .login-container input[type=text] {
+      padding: 5px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+      width: 150px; /* adjust as needed (as long as it doesn't break the topnav) */
+    }
+
+    .navbar .login-container input[type=password] {
+      padding: 5px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+      width: 150px; /* adjust as needed (as long as it doesn't break the topnav) */
+    }
+
+/******************SHOPPING CART***************/
+    
+    .cart{
+      float: right;
+      background-color: #f2c73a;
+      box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.2);
+      margin: 10px;
+      margin-top: 20px;
+      padding: 7px;
+      width: 195px;
+    
+    }
+    .cart img{
+      padding-left: 0px;
+    }
+
+/******************ERROR BODY***************/
+
+    .errorbody{
+      padding-top: 50px;
+      padding-left: 200px;
+      padding-right: 200px;
+      padding-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .errorbody .redirect{
+      font-size: 10px;
+    }
+
+/******************FOOTER*********************/
+
+    .footer{
+      height: 50px;
+      background-color: #f2c73a;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: white;
+      text-align: center;
+    }
+    .footer div{
+      display: block;
+    }
+
+/*******************HOME BODY******************/
+
+  .homebody{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .productrow{
+    margin: 0px;
+    padding-bottom: 30px;
+  }
+
+  .productrow .product{
+    display: inline-block;
+    margin: 15px;
+    box-shadow:4px 4px 9px lightgrey;
+    border-radius: 10px;
+    background-color: white;
+    /* min-height: 500px; */
+  }
+
+  .productrow .product .img{
+    /* border: 5px solid #f2c73a;
+    border-radius: 50%; */
+    margin: 20px;
+  }
+  .productrow .product .img img{
+    /* border-radius: 50%; */
+    width: 225px;
+    height: 200px;
+  }
+
+  .productrow .product .text{
+    max-width: 225px;
+    margin: 20px;
+  }
+
+  .productrow .product .text .name{
+    font-size: 25px;
+    color: #4f4f4f;
+    margin-top: 0px;
+    margin-bottom: 3px;
+  }
+  .productrow .product .text .details{
+    color: #4f4f4f;
+    font-size: 13px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
+/******************ABOUT-US BODY**************/
+
+  .about-usbody{
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-usbody .person{
+    display: inline-block;
+    margin: 20px;
+    box-shadow:4px 4px 9px lightgrey;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+  }
+
+  .about-usbody .person .img{
+    border: 5px solid #f2c73a;
+    border-radius: 50%;
+    margin-bottom: 50px;
+  }
+
+  .about-usbody .person .img img{
+    border-radius: 50%
+  }
+
+  .about-usbody .person .text{
+    max-width: 225px;
+  }
+
+  .about-usbody .person .text .name{
+    font-size: 25px;
+    color: #4f4f4f;
+  }
+  .about-usbody .person .text .text{
+    color: #4f4f4f;
+    font-size: 13px;
+  }
+
+/******************CONTACT-US BODY*************/
+
+.contact-usbody{
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-usbody .map{
+  border: 5px solid #f2c73a;
+}
+
+.contact-usbody .address{
+  min-width: 610px;
+  padding-left: 30px;
+}
+
+/******************CATAGORY BODY*****************/
+
+.catagorybody{
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/******************CART BODY*****************/
+
+.cartbody{
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.cartbody .form{
+  background-color: #f2c73a;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #d6a80f;
+  
+}
+
+.cartbody button {
+  float: right;
+  padding: 6px;
+  margin-top: -8px;
+  margin-right: 8px;
+  margin-left: 8px;
+  background: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px 0px rgba(0,0,0,0.2);
+}
+
+/******************ADMIN BODY*****************/
+
+.adminbody{
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminbody .form{
+  background-color: #f2c73a;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.adminbody .form .form-section{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.adminbody .form .form-section .section-header p{
+  color: white;
+  font-size: 30px;
+}
+
+.adminbody .form .form-section .user-list{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+  padding-top: 1px;
+  margin-top: 10px;
+}
+
+.adminbody .form .form-section .user-list p{
+  font-size: 15px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 10px;
+}
+
+.adminbody .form .form-section .itemlist{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+  padding-top: 1px;
+  margin-top: 10px;
+}
+
+.adminbody .form .form-section .itemlist p{
+  font-size: 15px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 10px;
+}
+
+.adminbody .form .form-section .catagorylist{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+  padding-top: 1px;
+  margin-top: 10px;
+}
+
+.adminbody .form .form-section .catagorylist p{
+  font-size: 15px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 10px;
+}
+
